@@ -1,11 +1,11 @@
-apt-get -y install apt-utils
-apt-get -y install net-tools
-apt-get -y install iproute2
-apt-get -y install openssh-server
-apt-get -y install cups
-apt-get -y install sudo
-apt-get -y install ufw
-apt-get -y install systemctl
+apt -y install apt-utils
+apt -y install net-tools
+apt -y install iproute2
+apt -y install openssh-server
+apt -y install cups
+apt -y install sudo
+apt -y install ufw
+apt -y install systemctl
 sed 's/#Port 22/Port 2200/' /etc/ssh/sshd_config
 echo
 echo
